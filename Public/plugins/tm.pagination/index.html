@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular分页</title>
+    <link href="css/pagination.css"  rel="stylesheet" >
+
+</head>
+<body ng-app="myApp" ng-controller="testController">
+
+    <tm-pagination conf="paginationConf"></tm-pagination>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/tm.pagination.min.js"></script>
+<script>
+    angular.module('myApp', ['tm.pagination']).controller('testController', ['$scope','$location',function ($scope,$location) {
+        $scope.paginationConf = {
+            currentPage: $location.search().currentPage ? $location.search().currentPage : 1,
+            totalItems: 8000,
+            itemsPerPage: 15,
+            pagesLength: 15,
+            perPageOptions: [10, 20, 30, 40, 50],
+            onChange: function(){
+                console.log($scope.paginationConf.currentPage);
+                $location.search('currentPage', $scope.paginationConf.currentPage);
+            }
+        };
+    }])
+</script>
+</html>

@@ -1,0 +1,173 @@
+.ngr-container {
+    padding: 24px 0 0 0;
+}
+
+.ngr-left-div {
+    padding: 0 16px 0 0;
+}
+
+/*左侧头像*/
+.ngr-avatar {
+    display: inline-block;
+    line-height: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.ngr-person-div {
+    width: 100%;
+}
+
+.ngr-left-void {
+    position: absolute;
+    height: 420px;
+    width: 240px;
+    background: url(/Public/images/Home/void-left.jpg) no-repeat center center;
+    background-size: contain;
+    left: -5px;
+}
+
+.ngr-person-item-one-div {
+    padding: 0 0 8px 0;
+}
+
+.ngr-person-item-two-div {
+    padding: 8px 0 8px 0;
+    border-top: 1px solid #EAECEF;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.ngr-person-item-three-div {
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.ngr-person-item-four-div {
+    padding: 12px 0 8px 0;
+}
+
+.ngr-skill-item {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #f1f8ff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .5em .5em 0;
+    padding: .3em .9em;
+    white-space: nowrap;
+}
+
+.ngr-name {
+    color: #24292e;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.ngr-person {
+    color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.ngr-person-sup {
+    color: #666;
+}
+
+.ngr-right-div {
+    padding: 0 0 0 8px;
+}
+
+/*选项卡*/
+.ngr-nav {
+    padding: 0 8px;
+}
+
+.ngr-nav-item {
+    color: #24292e;
+    font-weight: 600;
+    padding: 16px 8px;
+    text-align: center;
+    border-bottom: 2px solid #E36209;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.ngr-popular {
+    font-size: 16px;
+    padding: 24px 0 4px 8px;
+}
+
+.ngr-contributions {
+    font-size: 16px;
+    padding: 24px 0 12px 8px;
+}
+
+/*内容*/
+.ngr-content-div {
+
+}
+
+.ngr-content-item-div {
+    padding: 8px;
+}
+
+.ngr-content-item {
+    cursor: pointer;
+    height: 116px;
+    padding: 16px;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.ngr-content-item:hover {
+    /*box-shadow: rgba(0,0,0,.5) 0 0.625rem 1.125rem;*/
+    /*border: none;*/
+}
+
+.ngr-content-item-void {
+    background: url(/Public/images/Home/void.jpg) no-repeat center center;
+    background-size: contain;
+}
+
+.ngr-company-name {
+    color: #0366d6;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.ngr-company-name:hover {
+    color: #0366d6;
+}
+
+.ngr-company-time {
+    font-size: 12px;
+    margin: 8px 0 16px 0;
+}
+
+.ngr-company-duty {
+    font-size: 12px;
+}
+
+.ngr-calendar-div {
+    padding: 0 8px 0 8px;
+}
+
+.ngr-calendar {
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    width: 100%;
+    height: 150px;
+    background: url(/Public/images/Home/calendar.png) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}

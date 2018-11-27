@@ -1,0 +1,55 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+/*解决后退时的报错*/
+/** {*/
+    /*touch-action: none;*/
+/*}*/
+body {
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+.border {
+	border: 1px solid black;
+}
+.mui-plus header.mui-bar{
+	display: none;
+}
+.mui-plus .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+
+/*头-start*/
+.mui-bar-nav {
+    box-shadow: none;
+    background-color: #2494f3;
+}
+.mui-bar a, .mui-bar h1 {
+    color: #FFFFFF;
+}
+/*头-end*/
+
+/*弹出框样式-start*/
+.mui-toast-container {
+    bottom: 80% !important;
+}
+.mui-toast-message {
+    /*background: url(/app/themes/default/images/toast.png) no-repeat center 10px #000;*/
+    opacity: 0.6;
+    color: #fff;
+    width: 180px;
+    padding: 20px 5px 20px 5px;
+}
+/*弹出框样式-end*/
+/*文字溢出样式*/
+.yiChu {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+/*不显示样式*/
+.noShow {
+    display: none;
+}

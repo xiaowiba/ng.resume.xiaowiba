@@ -1,0 +1,166 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.ngrAdmin-login-logo {
+    cursor: pointer;
+    height: 105px;
+    text-align: center;
+    line-height: 140px;
+}
+
+.ngrAdmin-login-title {
+    height: 55px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    color: #333;
+}
+
+.ngrAdmin-login-error {
+    height: 50px;
+    text-align: center;
+    margin: 0 0 18px 0;
+}
+
+.ngrAdmin-login-error-div {
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 3px;
+    height: 100%;
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    color: #86181d;
+    background-color: #ffdce0;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+
+.ngrAdmin-login-error-font {
+    height: 100%;
+    float: left;
+    line-height: 50px;
+}
+
+.ngrAdmin-login-error-x {
+    float: right;
+    width: 50px;
+    height: 100%;
+    line-height: 50px;
+    opacity: .6;
+}
+
+.ngrAdmin-login-error-x:hover {
+    opacity: 1;
+}
+
+.ngrAdmin-login-div {
+    height: 250px;
+    text-align: center;
+}
+
+.ngrAdmin-login-form-div {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 265px;
+    height: 200px;
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.ngrAdmin-login-form {
+    width: 100%;
+}
+
+.ngrAdmin-login-label {
+    color: #24292e;
+    font-weight: 600;
+    font-size: 14px;
+    height: 20px;
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+
+.ngrAdmin-login-input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+    color: #24292e;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 34px;
+    outline: none;
+    padding: 6px 8px;
+    margin: 5px 0 15px 0;
+    vertical-align: middle;
+}
+
+.ngrAdmin-login-input-focus {
+    border-color: #2188ff;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075),0 0 0 .2em rgba(3,102,214,.3);
+}
+
+.ngrAdmin-login-button {
+    height: 35px;
+    width: 100%;
+    background-color: #269f42;
+    background-image: linear-gradient(-180deg, #2fcb53, #269f42 90%);
+    background-position: -.5em;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 5px 0 0 0;
+}
+
+.ngrAdmin-login-null {
+    height: 10px;
+}
+
+.ngrAdmin-register-div {
+    text-align: center;
+    height: 55px;
+}
+
+.ngrAdmin-register {
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 265px;
+    margin: 0 auto;
+}
+
+.ngrAdmin-register-new {
+    color: #24292e;
+    font-size: 14px;
+}
+
+.ngrAdmin-register-create {
+    cursor: pointer;
+    color: #0366d6;
+    font-size: 14px;
+}
+
+.ngrAdmin-login-footer {
+    text-align: center;
+    font-size: 12px;
+    height: 200px;
+    line-height: 150px;
+    color: #0366d6;
+}
+
+.ngrAdmin-login-footer span {
+    margin: 0 14px 0 0;
+}

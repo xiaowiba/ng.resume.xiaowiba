@@ -1,0 +1,172 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    background-color: initial;
+}
+
+.text-gray {
+    color: #586069 !important;
+}
+
+.text-blue {
+    color: #0366d6 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.text-skyblue {
+    color: skyblue;
+}
+
+.text-shallow-grays {
+    color: #F2F2F2 !important;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+.fa-2x {
+    font-size: 1.5em;
+}
+
+.f08 {
+    font-size: 80% !important;
+}
+
+.f09 {
+    font-size: 90% !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+/*header-start*/
+.ngr-header {
+    background-color: #24292e;
+    color: hsla(0,0%,100%,.75);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    z-index: 32;
+}
+
+.header-logo-invertocat {
+    color: #fff;
+    margin: -1px 15px -1px -2px;
+    white-space: nowrap;
+}
+
+.header-logo-invertocat .octicon-mark-github {
+    float: left;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.octicon {
+    vertical-align: text-bottom;
+    display: inline-block;
+    fill: currentColor;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-justify-between {
+    justify-content: space-between !important;
+}
+
+.container-lg {
+    max-width: 1012px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*登录入口*/
+.layui-nav {
+    position: relative;
+    /*padding: 0 20px;*/
+    background-color: transparent;
+    color: #fff;
+    /*border-radius: 2px;*/
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.layui-nav-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px !important;
+}
+
+.layui-nav-item a {
+
+}
+
+.layui-nav-bar {
+    background-color: transparent;
+}
+
+.layui-nav-child {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    min-width: 100%;
+    line-height: 30px;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+/*header-end*/
+
+/*footer*/
+.ngr-footer-div {
+    margin: 50px 0 0 0;
+    padding: 0;
+    height: 100px;
+    bottom: 0;
+}
+
+.ngr-footer-github {
+    border-top: 1px solid #EAECEF;
+    padding: 40px 0 0 0;
+    text-align: center;
+    color: #c6cbd1;
+}
+
+.ngr-footer-copyright {
+    border-top: 1px solid #EAECEF;
+    padding: 40px 0 0 0;
+    font-size: 12px;
+    text-align: left;
+    color: #0366d6;
+}

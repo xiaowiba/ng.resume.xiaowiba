@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ngrAdmin-index</title>
+
+    <include file="Common/header-css" />
+
+    <link rel="stylesheet" href="/Public/css/admin/config.css?version=<?php echo time();?>" />
+
+    <include file="Common/header-js" />
+
+    <script src="/Public/js/admin/app.js?version=<?php echo time();?>"></script>
+    <script src="/Public/js/admin/controller/configController.js?version=<?php echo time();?>"></script>
+</head>
+
+<body ng-app="ngrAdminApp" ng-controller="configController">
+
+<div>
+    <input type="hidden" id="access" value="{$configAccess}" />
+</div>
+
+<div class="ngr-admin-main">
+
+    <div class="ngr-admin-main-div">
+
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <div class="layui-input-block ngr-admin-label">权限</div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="radio" name="access" id="access0" value="0" title="不允许访问" ng-model="access">
+                    <input type="radio" name="access" id="access1" value="1" title="允许访问但数据加密" ng-model="access">
+                    <input type="radio" name="access" id="access2" value="2" title="允许访问且数据不加密" ng-model="access">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block"></div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" ng-click="save();" type="button">保存设置</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<include file="Common/footer" />
+
+</body>
+
+</html>

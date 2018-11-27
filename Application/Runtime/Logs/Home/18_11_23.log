@@ -1,0 +1,29 @@
+[ 2018-11-23T10:50:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `ngr_config` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `ngr_config` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `ngr_user` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `ngr_user` WHERE ( uuid = "U0001" ) LIMIT 1   [ RunTime:0.0251s ]
+SQL: SHOW COLUMNS FROM `ngr_article` [ RunTime:0.0240s ]
+SQL: SELECT `ccid`,`cname`,`duty`,`stime`,`etime`,`duration` FROM `ngr_article` WHERE ( 1=1 ) LIMIT 4   [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-11-23T16:33:15+08:00 ] 127.0.0.1 /Home/index/index1
+ERR: 非法操作:index1
+

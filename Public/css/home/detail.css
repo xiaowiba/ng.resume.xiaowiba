@@ -1,0 +1,84 @@
+.ngr-detail-crumb {
+    height: 30px;
+    margin: 18px 0 18px 0;
+    padding: 0;
+    width: 100%;
+    color: #586069;
+    font-size: 18px;
+}
+
+.ngr-detail-realname {
+    color: #0366d6;
+    cursor: pointer;
+}
+
+.ngr-detail-cname {
+    font-weight: 600;
+    color: #0366d6;
+    cursor: pointer;
+}
+
+.ngr-detail-tab {
+    background-color: #fafbfc;
+    height: 43px;
+    border-bottom: 1px solid #E1E4E8;
+}
+
+.ngr-detail-tab-item {
+    text-align: center;
+    line-height: 40px;
+    height: 100%;
+    width: 80px;
+    border-top: 2px solid #E36209;
+    border-left: 1px solid #E1E4E8;
+    border-right: 1px solid #E1E4E8;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 3px 3px 0 0;
+}
+
+.ngr-detail-title {
+    background-color: #f1f8ff;
+    border: 1px solid #c8e1ff;
+    border-radius: 3px;
+    color: #586069;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0;
+    height: 40px;
+    margin: 20px 0 20px 0;
+}
+
+.ngr-detail-title-cname {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 40%;
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+
+.ngr-detail-title-time {
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    width: 40%;
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+.ngr-detail-md-title {
+    height: 40px;
+    background-color: #fafbfc;
+    border: 1px solid #e1e4e8;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.ngr-detail-md {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 1px solid #e1e4e8;
+    border-right: 1px solid #e1e4e8;
+    border-bottom: 1px solid #e1e4e8;
+}
