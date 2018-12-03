@@ -63,6 +63,20 @@ ngrApp.controller('detailController', function ($rootScope, $scope, $filter, $ht
             toolbar  : false,             //关闭工具栏
         });
 
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '#ngr-detail-editor-md', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            positionFixedSelector: ".toc", //目录位置固定
+            scrollEndCallback: function (e) { //回调函数
+                //window.scrollTo(window.scrollX, window.scrollY - 80);
+                //修正滚动后页面的位置，80 是自己顶部栏的高度
+            },
+        });
+
     };
 
     /****************************************************方法*end*******************************************************/
