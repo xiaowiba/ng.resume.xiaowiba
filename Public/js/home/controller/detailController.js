@@ -3,6 +3,23 @@ ngrApp.controller('detailController', function ($rootScope, $scope, $filter, $ht
     /****************************************************方法*start*****************************************************/
     //初始化数据
     $scope.INIT = function () {
+        function scroll_fn() {
+            var document_height = $(document).height();
+            var scroll_so_far = $(window).scrollTop();
+            var window_height = $(window).height();
+            var max_scroll = document_height - window_height;
+            var scroll_percentage = scroll_so_far / (max_scroll / 100);
+            $('#load').width(scroll_percentage + '%');
+        }
+
+        $(window).scroll(function() {
+            scroll_fn();
+        });
+
+        $(window).resize(function() {
+            scroll_fn();
+        });
+
         $scope.ccid = $('#ccid').val();
 
     };

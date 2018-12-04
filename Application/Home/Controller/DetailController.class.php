@@ -12,7 +12,18 @@ class DetailController extends CommonController {
     public function index() {
         $ccid = I('get.ccid');
 
+        $res = D('Article')->getHomeArticleDetailData($ccid);
+
+        $cname = $res[0]['cname'];
+
         $this->assign('ccid', $ccid);
+        $this->assign('cname', $cname);
+
+        $user = D('User')->getUserData($_COOKIE['ngrUuid']);
+
+        $username = $user['username'];
+
+        $this->assign('username', $username);
 
         $this->display("Index/detail");
     }
