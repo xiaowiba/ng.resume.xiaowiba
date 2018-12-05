@@ -39,7 +39,7 @@ class LoginController extends Controller {
             D('User')->updateLoginData($uuid, $loginIp, $loginTime, $loginCount);
 
             //setcookie('ngrUuid', C('MD5_PRE').md5($res[0]['uuid']), time()+3600, '/');
-            setcookie('ngrUuid', $res[0]['uuid'], time()+3600, '/');
+            setcookie('ngrUuid', $res[0]['uuid'], time()+3600*12, '/');
 
             exit(json_encode(array('code' => 200, 'info' => 'success')));
         }

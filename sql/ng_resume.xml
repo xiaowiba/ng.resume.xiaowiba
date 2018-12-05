@@ -1,0 +1,72 @@
+<xml>
+    <table name='ngr_user' mark='用户表'>
+        <field name='uuid'      type='varchar(255)' mark='唯一ID' primary="primary" />
+        <field name='username'  type='varchar(255)' mark='用户名' />
+        <field name='pwd'       type='varchar(255)' mark='密码' />
+        <field name='realname'  type='varchar(255)' mark='姓名' />
+        <field name='sex'       type='int(1)'       mark='0:男 ; 1:女 ; 2:保密' />
+        <field name='birthday'  type='varchar(255)' mark='出生年月' />
+        <field name='age'       type='int(3)'       mark='年龄' />
+        <field name='workinglife' type='int(11)'    mark='工作年限' />
+        <field name='education' type='int(1)'       mark='0:专科 ; 1:本科 ; 2:研究生 ; 3:保密' />
+        <field name='school'    type='varchar(255)' mark='毕业院校' />
+        <field name='major'     type='varchar(255)' mark='大学专业' />
+        <field name='duties'    type='varchar(255)' mark='大学职务' />
+        <field name='political' type='int(1)'       mark='0:群众 ; 1:团员 ; 2:预备党员 ; 3:党员 ; 4:保密' />
+        <field name='english'   type='int(1)'       mark='0:无 ; 1:四级 ; 2:六级 ; 3:八级 ; 4:保密' />
+        <field name='address'   type='varchar(255)' mark='家庭住址' />
+        <field name='phone'     type='varchar(255)' mark='电话号码' />
+        <field name='qq'        type='varchar(255)' mark='qq' />
+        <field name='wechat'    type='varchar(255)' mark='微信' />
+        <field name='github'    type='varchar(255)' mark='github' />
+        <field name='email'     type='varchar(255)' mark='邮箱' />
+        <field name='drivinglicense' type='varchar(255)' mark='驾照' />
+        <field name='blog'      type='varchar(255)' mark='博客' />
+        <field name='skill'     type='varchar(255)' mark='技能' />
+        <field name='auth'      type='int(1)'       mark='权限：0:超级管理员 ; 1:测试 ; 2:普通用户' />
+        <field name='logintime' type='int(11)'      mark='登录时间' />
+        <field name='loginip'   type='varchar(255)' mark='登录IP' />
+        <field name='logincount' type='int(11)'     mark='登录次数' />
+        <field name='remark'    type='varchar(255)' mark='备注' />
+    </table>
+
+    <table name='ngr_article' mark='文章表'>
+        <field name='ccid'      type='varchar(255)' mark='唯一ID' primary="primary" />
+        <field name='cname'     type='varchar(255)' mark='公司名称' />
+        <field name='duty'      type='varchar(255)' mark='职务' />
+        <field name='stime'     type='varchar(255)' mark='开始时间' />
+        <field name='etime'     type='varchar(255)' mark='结束时间' />
+        <field name='duration'  type='varchar(255)' mark='工作时长' />
+        <field name='salary'    type='int(11)'      mark='薪资' />
+        <!--<field name='insurance' type='int(1)'       mark='五险 0:无 ; 1:有' />-->
+        <!--<field name='gold'      type='int(1)'       mark='公积金 0:无 ; 1:有' />-->
+        <!--<field name='quit'      type='varchar(255)' mark='离职原因' />-->
+        <field name='content'   type='varchar(255)' mark='内容' />
+        <field name='markdown'  type='varchar(255)' mark='markdown' />
+        <field name='sort'      type='int(11)'      mark='排序' />
+        <field name='auth'      type='int(1)'       mark='权限： 0:无 ; 1:有' />
+        <field name='pwd'       type='varchar(255)' mark='访问密码' />
+        <field name='exhibition' type='int(1)'      mark='展示： 0:不展示 ; 1:展示' />
+        <field name='remark'    type='varchar(255)' mark='备注' />
+    </table>
+
+    <!--table name='ngr_project' mark='项目表'>
+        <field name='ppid'      type='varchar(255)' mark='唯一ID' primary="primary" />
+        <field name='ccid'      type='varchar(255)' mark='所属公司唯一ID' />
+        <field name='pname'     type='varchar(255)' mark='项目名称' />
+        <field name='url'       type='varchar(255)' mark='项目地址' />
+        <field name='stime'     type='varchar(255)' mark='开始时间' />
+        <field name='etime'     type='varchar(255)' mark='结束时间' />
+        <field name='content'   type='varchar(255)' mark='内容' />
+        <field name='label'     type='varchar(255)' mark='涉及技术标签' />
+        <field name='exhibition' type='int(1)'      mark='展示： 0:不展示 ; 1:展示' />
+        <field name='sort'      type='int(11)'      mark='排序' />
+        <field name='remark'    type='varchar(255)' mark='备注' />
+    </table-->
+
+    <table name='ngr_config' mark='配置表'>
+        <field name='ffid'      type='varchar(255)' mark='唯一ID' primary="primary" />
+        <field name='access'    type='int(1)'       mark='是否允许访问 0:不允许访问 ; 1:允许访问但数据加密 ; 2:允许访问且数据不加密' />
+    </table>
+
+</xml>

@@ -1,7 +1,7 @@
 <?php
 return array(
     'DB_TYPE' => 'mysql',
-    'DB_HOST' => '116.62.17.144',
+    'DB_HOST' => '127.0.0.1',
     'DB_USER' => 'ng_resume',
     'DB_PWD' => 'ng_resume',
     'DB_PORT' => 3306,
