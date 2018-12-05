@@ -96,6 +96,15 @@ ngrApp.controller('detailController', function ($rootScope, $scope, $filter, $ht
 
     };
 
+    $scope.goPrevNext = function (ccid) {
+        if(ccid === '0'){
+            return false;
+        }else{
+            window.location.href = '/home/detail/index/ccid/' + ccid;
+        }
+
+    };
+
     /****************************************************方法*end*******************************************************/
 
     /****************************************************逻辑*start*****************************************************/

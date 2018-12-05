@@ -41,6 +41,16 @@ class ArticleModel extends Model {
     }
 
     /**
+     * @param $uuid
+     * @param $sort
+     * @return mixed
+     */
+    public function getAdminArticlePrevNext($uuid, $sort){
+        $res = $this->_db->where('uuid = "'.$uuid.'" AND sort = '.$sort)->field('ccid,cname')->select();
+        return $res;
+    }
+
+    /**
      * @param $ccid
      * @return mixed
      */

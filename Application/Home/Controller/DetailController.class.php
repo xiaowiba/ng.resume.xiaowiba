@@ -10,16 +10,53 @@ class DetailController extends CommonController {
     }
 
     public function index() {
+        $uuid = $_COOKIE['ngrUuid'];
+
+        if(!(isset($_COOKIE['ngrUuid']))){
+            exit("<script>window.parent.location.href = '/404';</script>");
+        }
+
+        //获取当前数据信息
         $ccid = I('get.ccid');
 
         $res = D('Article')->getHomeArticleDetailData($ccid);
 
         $cname = $res[0]['cname'];
+        $sort = $res[0]['sort'];
+
+        $prev = $sort - 1;
+        $next = $sort + 1;
+
+        $resPrev = D('Article')->getAdminArticlePrevNext($uuid, $prev);
+
+        $resNext = D('Article')->getAdminArticlePrevNext($uuid, $next);
+
+        if($resPrev[0] === null){
+            $prevName = '没有了';
+            $prevCcid = 0;
+        }else{
+            $prevName = $resPrev[0]['cname'];
+            $prevCcid = $resPrev[0]['ccid'];
+        }
+
+        if($resNext[0] === null){
+            $nextName = '没有了';
+            $nextCcid = 0;
+        }else{
+            $nextName = $resNext[0]['cname'];
+            $nextCcid = $resNext[0]['ccid'];
+        }
 
         $this->assign('ccid', $ccid);
         $this->assign('cname', $cname);
 
-        $user = D('User')->getUserData($_COOKIE['ngrUuid']);
+        $this->assign('prevName', $prevName);
+        $this->assign('nextName', $nextName);
+        $this->assign('prevCcid', $prevCcid);
+        $this->assign('nextCcid', $nextCcid);
+
+        //获取当前登录用户信息
+        $user = D('User')->getUserData($uuid);
 
         $username = $user['username'];
 

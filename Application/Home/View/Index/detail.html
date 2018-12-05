@@ -146,7 +146,18 @@
 
         </div>
 
-        <div class="ngr-detail-md-title layui-col-md12"></div>
+        <div class="ngr-detail-md-title layui-col-md12">
+            <div class="ngr-prev layui-col-md6" title="上一页" ng-click="goPrevNext('{$prevCcid}');">
+                <i class="layui-icon layui-icon-prev" style="font-size: 14px;"></i>
+                <span>&nbsp;</span>
+                <span>{$prevName}</span>
+            </div>
+            <div class="ngr-next layui-col-md6" title="下一页" ng-click="goPrevNext('{$nextCcid}');">
+                <span>{$nextName}</span>
+                <span>&nbsp;</span>
+                <i class="layui-icon layui-icon-next" style="font-size: 14px;"></i>
+            </div>
+        </div>
 
         <div class="toc"></div>
 
