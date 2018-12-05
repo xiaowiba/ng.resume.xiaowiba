@@ -19,3 +19,6 @@ git clone https://github.com/xiaowiba/ng.resume.xiaowiba.git<br>
 执行 sql 文件夹下的 ng_resume.sql
 
 # 其他
+后台账户：admin<br>
+密码：test
+
