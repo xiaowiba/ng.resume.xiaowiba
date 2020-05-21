@@ -1,5 +1,5 @@
 # 项目重构ing
-# 预览(已暂停预览)
+# 预览
 <a href='https://ng.resume.xiaowiba.com' target='_blank'>**ng.resume.xiaowiba.com**</a>
 
 # 项目介绍
