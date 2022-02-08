@@ -32,6 +32,7 @@
 
     <table name='ngr_article' mark='文章表'>
         <field name='ccid'      type='varchar(255)' mark='唯一ID' primary="primary" />
+        <field name='uuid'      type='varchar(255)' mark='关联唯一ID' primary="primary" />
         <field name='cname'     type='varchar(255)' mark='公司名称' />
         <field name='duty'      type='varchar(255)' mark='职务' />
         <field name='stime'     type='varchar(255)' mark='开始时间' />

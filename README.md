@@ -1,6 +1,5 @@
-# 项目重构ing
-# 预览
-<a href='https://ng.resume.xiaowiba.com' target='_blank'>**ng.resume.xiaowiba.com**</a>
+﻿# 预览
+<a href='http://ng.resume.xiaowiba.com' target='_blank'>**ng.resume.xiaowiba.com**</a>
 
 # 项目介绍
 一个简单的个人简历展示系统，前端界面仿照github设计。<br>
@@ -12,7 +11,8 @@
 # 项目框架
 前端：angular + layui<br>
 后台：thinkphp3.2<br>
-数据库：mysql
+数据库：mysql<br>
+php5.4及以下版本
 
 # 运行
 git clone https://github.com/xiaowiba/ng.resume.xiaowiba.git<br>
@@ -22,4 +22,13 @@ git clone https://github.com/xiaowiba/ng.resume.xiaowiba.git<br>
 # 其他
 后台账户：test<br>
 密码：test
+
+# 伪静态
+<pre><code><IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
+</IfModule></code></pre>
 

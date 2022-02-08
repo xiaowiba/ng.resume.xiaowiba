@@ -21,6 +21,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `ngr_article`;
 CREATE TABLE `ngr_article` (
   `ccid` varchar(255) NOT NULL COMMENT '唯一ID',
+  `uuid` varchar(255) NOT NULL COMMENT '关联唯一ID',
   `cname` varchar(255) DEFAULT NULL COMMENT '公司名称',
   `duty` varchar(255) DEFAULT NULL COMMENT '职务',
   `stime` varchar(255) DEFAULT NULL COMMENT '开始时间',
@@ -96,4 +97,4 @@ CREATE TABLE `ngr_user` (
 -- ----------------------------
 -- Records of ngr_user
 -- ----------------------------
-INSERT INTO `ngr_user` VALUES ('U0001', 'admin', '098f6bcd4621d373cade4e832627b4f6', '测试', '0', '2018.1.1', '18', '2', '1', '牛津', '佛学', '测试', '0', '1', null, '15866886688', '123456', 'test', 'https://github.com/', 'test@test.com', null, 'http://xiaowiba.com', '测试,运维', '1542865835', '127.0.0.1', '2', null, '1');
+INSERT INTO `ngr_user` VALUES ('U0001', 'test', '098f6bcd4621d373cade4e832627b4f6', '测试', '0', '2018.1.1', '18', '2', '1', '牛津', '佛学', '测试', '0', '1', null, '15866886688', '123456', 'test', 'https://github.com/', 'test@test.com', null, 'http://xiaowiba.com', '测试,运维', '1542865835', '127.0.0.1', '2', null, '1');
